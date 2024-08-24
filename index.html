@@ -1,6 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Momo Carrelage</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Autres balises -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momo Carrelage - Expert en Carrelage</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Lien vers le favicon -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Momo Carrelage"> <!-- Logo -->
+            <h1>Momo Carrelage</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Découvrez l'excellence du carrelage avec Momo Carrelage</h2>
+            <p>Transformez vos espaces avec nos carrelages de haute qualité.</p>
+            <a href="#services" class="cta-button">Explorez nos services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>Pose de Carrelage</h3>
+                <p>Une pose précise et durable pour un résultat impeccable.</p>
+            </div>
+            <div class="service-item">
+                <h3>Rénovation</h3>
+                <p>Redonnez vie à vos anciens sols avec notre expertise.</p>
+            </div>
+            <div class="service-item">
+                <h3>Conseils en Design</h3>
+                <p>Choisissez le carrelage parfait grâce à nos conseils experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Nos Réalisations</h2>
+        <div class="gallery-container">
+            <img src="gallery1.jpg" alt="Travaux 1">
+            <img src="gallery2.jpg" alt="Travaux 2">
+            <img src="gallery3.jpg" alt="Travaux 3">
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Ce que disent nos clients</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Un service impeccable et un résultat magnifique !"</p>
+                <span>- Jean Dupont</span>
+            </div>
+            <div class="testimonial">
+                <p>"Momo Carrelage a transformé notre maison."</p>
+                <span>- Marie Martin</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" action="send_mail.php" method="post">
+            <div class="form-group">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Momo Carrelage. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
