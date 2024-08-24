@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
         if (sectionPosition < screenPosition) {
             section.classList.add('show');
         } else {
-            section.classList.add('hidden');
+            section.classList.remove('show');
         }
     });
 });
